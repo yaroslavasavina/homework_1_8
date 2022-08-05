@@ -35,7 +35,7 @@ public class Main {
         }
     }
 
-    public static void printDeliveryDistance(int deliveryDistance) {
+    public static int printDeliveryDistance(int deliveryDistance) {
 
         if (deliveryDistance < 20) {
             System.out.println("Потребуется 1 день, чтобы доставить Вашу карту.");
@@ -46,5 +46,6 @@ public class Main {
         } else {
             System.out.println("Доставка не осуществляется.");
         }
+        return deliveryDistance;
     }
 }
