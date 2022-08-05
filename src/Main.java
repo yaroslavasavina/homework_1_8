@@ -2,6 +2,16 @@ import java.time.LocalDate;
 
 public class Main {
 
+    public static void main(String[] args) {
+        int year = 2000;
+        printIsLeapYear(year);
+        int clientOS = 1;
+        int currentYear = LocalDate.now().getYear();
+        selectClientOS(clientOS, currentYear);
+        int deliveryDistance = 95;
+        printDeliveryDistance(deliveryDistance);
+    }
+
     public static void printIsLeapYear(int year) {
         boolean leapYear = (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
         if (leapYear) {
@@ -36,15 +46,5 @@ public class Main {
         } else {
             System.out.println("Доставка не осуществляется.");
         }
-    }
-
-    public static void main(String[] args) {
-        int year = 2000;
-        printIsLeapYear(year);
-        int clientOS = 1;
-        int currentYear = LocalDate.now().getYear();
-        selectClientOS(clientOS, currentYear);
-        int deliveryDistance = 95;
-        printDeliveryDistance(deliveryDistance);
     }
 }
