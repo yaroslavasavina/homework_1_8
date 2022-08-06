@@ -12,7 +12,7 @@ public class HomeWork_1_9 {
         Author authorWilliamShakespeare = new Author("Уильям Шекспир");
         Book bookGamlet = new Book("Гамлет", authorWilliamShakespeare, 1623);
         System.out.println("Автор - " + authorWilliamShakespeare.getFullNameAuthor() + ". Название книги - " + bookGamlet.getBookName() + ". Дата публикации - " + bookGamlet.getDateOfPublication() + ".");
-        bookAnnaKarenina.setDateOfPublication(1622);
+        bookGamlet.setDateOfPublication(1622);
         System.out.printf("Дата публикации через сеттер- %s.", bookGamlet.getDateOfPublication());
     }
 }
